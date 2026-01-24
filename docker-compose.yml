@@ -15,6 +15,8 @@ services:
       - auth_data:/app/data
     networks:
       - octopus_network
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
 networks:
   octopus_network:
