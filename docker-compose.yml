@@ -6,19 +6,13 @@ services:
     container_name: octopus-auth
     restart: unless-stopped
     ports:
-      - "3002:3002"
+      - "3003:3002"
     environment:
       - NODE_ENV=production
       - JWT_SECRET=${JWT_SECRET:-octopus-shared-secret-change-in-production}
       - PORT=3002
     volumes:
       - auth_data:/app/data
-    networks:
-      - octopus-network
 
 volumes:
   auth_data:
-
-networks:
-  octopus-network:
-    external: true
