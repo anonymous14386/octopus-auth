@@ -13,6 +13,12 @@ services:
       - PORT=3002
     volumes:
       - auth_data:/app/data
+    networks:
+      - octopus_network
+
+networks:
+  octopus_network:
+    driver: bridge
 
 volumes:
   auth_data:
