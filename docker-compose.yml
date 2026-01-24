@@ -18,6 +18,7 @@ services:
 
 networks:
   octopus_network:
+    name: octopus_network
     driver: bridge
 
 volumes:
