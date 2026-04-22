@@ -28,6 +28,7 @@ app.use(cors({
         'http://localhost:3001',
         'https://budget.octopustechnology.net',
         'https://health.octopustechnology.net',
+        'https://math.octopustechnology.net',
         'https://octopustechnology.net'
     ],
     credentials: true
